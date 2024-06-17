@@ -3,27 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de excusas Ignacio Quirós</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <script></script>
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-light text-center">
+    <div
+      id="top"
+      class="bg-dark text-white border border-secondary rounded m-3 p-3"
+    >
+      <h1 class="mx-auto">Excuse Generator</h1>
+    </div>
+    <div id="body" class="m-4">
+      <div id="button" class="my-5">
+        <button class="btn btn-success btn-lg">Generate Here</button>
+      </div>
+      <div
+        id="excuseGenerator"
+        class="bg-warning border border-secondary rounded mt-3 p-4 fs-2"
+      >
+        <p id="excuse" class="text-dark mx-auto"></p>
       </div>
     </div>
+    <div id="madeBy" class="mt-5 text-muted text-right me-5">
+      Made by Ignacio Quirós \o/
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
