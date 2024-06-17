@@ -21,6 +21,11 @@ let matrizArrays = [who, action, what, when];
 const button = document.querySelector("button");
 button.addEventListener("click", onButtonClick);
 
+// Llamando a la función de generar excusas una vez cargue la ventana
+window.onload = function() {
+  generadorDeExcusas();
+};
+
 // Función que genera excusas
 function generadorDeExcusas() {
   // Importante vaciarlo para que se pueda renovar la excusa al clicar en el botón
