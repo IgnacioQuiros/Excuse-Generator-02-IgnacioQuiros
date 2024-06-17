@@ -21,11 +21,6 @@ let matrizArrays = [who, action, what, when];
 const button = document.querySelector("button");
 button.addEventListener("click", onButtonClick);
 
-// Llamando a la función de generar excusas una vez cargue la ventana
-window.onload = function() {
-  generadorDeExcusas();
-};
-
 // Función que genera excusas
 function generadorDeExcusas() {
   // Importante vaciarlo para que se pueda renovar la excusa al clicar en el botón
@@ -33,8 +28,7 @@ function generadorDeExcusas() {
 
   // Aquí es la parte de la funcion que va eligiendo distintas posiciones para cada array de la matriz
   matrizArrays.forEach(array => {
-    let randomNumber = Math.floor(Math.random() * array.length);
-    finalArray.push(array[randomNumber]);
+    finalArray.push(array[Math.floor(Math.random() * array.length)]);
   });
 
   // Aquí mandando al html que de base el div de "excusa" que dirá "Click the button to start!"
